@@ -44,6 +44,16 @@ namespace Laboratorio04
                 i--;
             }
 
+            while (j >= 0)
+            {
+                int r = acarreo + (num2[j] - '0');
+                acarreo = r / 10;
+
+                result = (r % 10) + result;
+
+                j--;
+            }
+
             if (acarreo > 0)
                 result = acarreo + result;
 
